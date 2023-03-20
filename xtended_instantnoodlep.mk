@@ -15,19 +15,16 @@ $(call inherit-product, device/oneplus/instantnoodlep/device.mk)
 # Inherit some common Xtended stuff.
 $(call inherit-product, vendor/xtended/config/common_full_phone.mk)
 
-Add these flags in your xtended_codename.mk:
-
-XTENDED_BUILD_DONATE_URL := https://paypal.me/twinchin96?country.x=CA&locale.x=en_US
-
 EXTRA_UDFPS_ANIMATIONS := true
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SUPPORTS_QUICK_TAP := true
 XTENDED_BUILD_TYPE := OFFICIAL
 XTENDED_BUILD_MAINTAINER := Zizzyboi
+XTENDED_BUILD_DONATE_URL := https://paypal.me/twinchin96?country.x=CA&locale.x=en_US
 WITH_GAPPS := true
 TARGET_SUPPORTS_CALL_RECORDING := true
 TARGET_ENABLE_BLUR := true
-TARGET_INCLUDE_NGA=true
+TARGET_INCLUDE_NGA := true
 
 PRODUCT_NAME := xtended_instantnoodlep
 PRODUCT_DEVICE := instantnoodlep
